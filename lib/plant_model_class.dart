@@ -3,19 +3,29 @@
 
 import 'dart:convert';
 
-import 'package:flutter/material.dart';
-
 class Plant {
   // AssetImage assetImage;
   String imageUrl;
   String title;
   String subtitle;
   bool isFavorite;
+  String plantType;
+  String plantFamily;
+  String plantOrigin;
+  String lightRequirement;
+  String watering;
+  String backgroundImageUrl;
   Plant({
     required this.imageUrl,
     required this.title,
     required this.subtitle,
     required this.isFavorite,
+    required this.plantType,
+    required this.plantFamily,
+    required this.plantOrigin,
+    required this.lightRequirement,
+    required this.watering,
+    required this.backgroundImageUrl,
   });
   
 
@@ -24,12 +34,24 @@ class Plant {
     String? title,
     String? subtitle,
     bool? isFavorite,
+    String? plantType,
+    String? plantFamily,
+    String? plantOrigin,
+    String? lightRequirement,
+    String? watering,
+    String? backgroundImageUrl,
   }) {
     return Plant(
       imageUrl: imageUrl ?? this.imageUrl,
       title: title ?? this.title,
       subtitle: subtitle ?? this.subtitle,
       isFavorite: isFavorite ?? this.isFavorite,
+      plantType: plantType ?? this.plantType,
+      plantFamily: plantFamily ?? this.plantFamily,
+      plantOrigin: plantOrigin ?? this.plantOrigin,
+      lightRequirement: lightRequirement ?? this.lightRequirement,
+      watering: watering ?? this.watering,
+      backgroundImageUrl: backgroundImageUrl ?? this.backgroundImageUrl,
     );
   }
 
@@ -39,6 +61,12 @@ class Plant {
       'title': title,
       'subtitle': subtitle,
       'isFavorite': isFavorite,
+      'plantType': plantType,
+      'plantFamily': plantFamily,
+      'plantOrigin': plantOrigin,
+      'lightRequirement': lightRequirement,
+      'watering': watering,
+      'backgroundImageUrl': backgroundImageUrl,
     };
   }
 
@@ -48,6 +76,12 @@ class Plant {
       title: map['title'] as String,
       subtitle: map['subtitle'] as String,
       isFavorite: map['isFavorite'] as bool,
+      plantType: map['plantType'] as String,
+      plantFamily: map['plantFamily'] as String,
+      plantOrigin: map['plantOrigin'] as String,
+      lightRequirement: map['lightRequirement'] as String,
+      watering: map['watering'] as String,
+      backgroundImageUrl: map['backgroundImageUrl'] as String,
     );
   }
 
@@ -57,7 +91,7 @@ class Plant {
 
   @override
   String toString() {
-    return 'Plant(imageUrl: $imageUrl, title: $title, subtitle: $subtitle, isFavorite: $isFavorite)';
+    return 'Plant(imageUrl: $imageUrl, title: $title, subtitle: $subtitle, isFavorite: $isFavorite, plantType: $plantType, plantFamily: $plantFamily, plantOrigin: $plantOrigin, lightRequirement: $lightRequirement, watering: $watering, backgroundImageUrl: $backgroundImageUrl)';
   }
 
   @override
@@ -68,7 +102,13 @@ class Plant {
       other.imageUrl == imageUrl &&
       other.title == title &&
       other.subtitle == subtitle &&
-      other.isFavorite == isFavorite;
+      other.isFavorite == isFavorite &&
+      other.plantType == plantType &&
+      other.plantFamily == plantFamily &&
+      other.plantOrigin == plantOrigin &&
+      other.lightRequirement == lightRequirement &&
+      other.watering == watering &&
+      other.backgroundImageUrl == backgroundImageUrl;
   }
 
   @override
@@ -76,6 +116,12 @@ class Plant {
     return imageUrl.hashCode ^
       title.hashCode ^
       subtitle.hashCode ^
-      isFavorite.hashCode;
+      isFavorite.hashCode ^
+      plantType.hashCode ^
+      plantFamily.hashCode ^
+      plantOrigin.hashCode ^
+      lightRequirement.hashCode ^
+      watering.hashCode ^
+      backgroundImageUrl.hashCode;
   }
 }
