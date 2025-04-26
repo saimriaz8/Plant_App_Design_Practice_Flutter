@@ -1,7 +1,9 @@
 # 🌱 Flutter Plant Explorer App
 
 A clean and responsive Flutter app to explore different types of plants with category filters, favorites, and dark mode support.
-
+## 🎥 Video
+   ![Image](https://github.com/user-attachments/assets/5f43fc25-77bc-4171-bc41-95df27d426ea)
+   
 ## 🚀 Features
 
 - 🔘 Category filters (Vegetables, Fruits, Herbs, Grains, etc.)
