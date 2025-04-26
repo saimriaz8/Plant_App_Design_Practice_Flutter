@@ -1,16 +1,26 @@
-# plant_screen_design_flutter
+# 🌱 Flutter Plant Explorer App
 
-A new Flutter project.
+A clean and responsive Flutter app to explore different types of plants with category filters, favorites, and dark mode support.
 
-## Getting Started
+## 🚀 Features
 
-This project is a starting point for a Flutter application.
+- 🔘 Category filters (Vegetables, Fruits, Herbs, Grains, etc.)
+- 💚 Mark plants as favorites
+- 🌗 Light & Dark mode toggle
+- 🔄 Switch between Grid & List view
+- 🧭 Tab navigation (General / Favorites)
+- ⚡ Smooth animations using `AnimatedBuilder`gti
 
-A few resources to get you started if this is your first Flutter project:
+## 🛠 Built With
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Flutter & Dart
+- Custom UI components
+- Animated theme transitions
+- TabBar & TabBarView
+- Responsive layout with `MediaQuery`
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🔧 Getting Started
+
+1. Clone the repo  
+   ```bash
+   git clone https://github.com/saimriaz8/Plant_App_Design_Practice_Flutter
